@@ -89,7 +89,7 @@ abstract class OdooConnector {
       "jsonrpc": "2.0",
       "method": "call",
       "params": params,
-      "id": const Uuid().v1()
+      "id":  Uuid().v1()
     };
   }
 
