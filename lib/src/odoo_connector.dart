@@ -89,9 +89,10 @@ abstract class OdooConnector {
       "jsonrpc": "2.0",
       "method": "call",
       "params": params,
-      "id": const Uuid().v1()
+      "id":  Uuid().v1()
     };
   }
+
 
   Future<OdooResponse> callRequest(String url, Map payload) async {
     var body = json.encode(payload);
